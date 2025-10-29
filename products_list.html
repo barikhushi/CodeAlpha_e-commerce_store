@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Our Products</h1>
+  {% for product in products %}
+    <div class="product">
+      <img src="{{ product.image }}" width="150"><br>
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p>₹{{ product.price }}</p>
+      <a href="{% url 'product_detail' product.id %}">View Details</a>
+      <a href="{% url 'add_to_cart' product.id %}">Add to Cart</a>
+    </div>
+  {% endfor %}
+  <a href="{% url 'cart' %}">🛒 View Cart</a>
+</body>
+</html>
