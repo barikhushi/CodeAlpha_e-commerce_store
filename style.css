@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+}
+button, a {
+  background: green;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
