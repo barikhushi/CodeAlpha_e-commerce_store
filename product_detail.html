@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ product.name }}</title></head>
+<body>
+  <img src="{{ product.image }}" width="200">
+  <h1>{{ product.name }}</h1>
+  <p>{{ product.description }}</p>
+  <p>₹{{ product.price }}</p>
+  <a href="{% url 'add_to_cart' product.id %}">Add to Cart</a>
+  <a href="/">Back to Shop</a>
+</body>
+</html>
